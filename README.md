@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Part of the course React front to back 2022: https://github.com/bradtraversy/feedback-app
+On udemy: https://www.udemy.com/course/react-front-to-back-2022/learn/lecture/29767488#overview
+
 ## Available Scripts
 
 In the project directory, you can run:

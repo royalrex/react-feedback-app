@@ -1,8 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('that sections are rendered', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  // header
+  const headerElement = screen.getByText(/feedback ui/i);
+  expect(headerElement).toBeInTheDocument();
+  // rating form
+  const ratingFromElement = screen.getByPlaceholderText(/write a review/i);
+  expect(ratingFromElement).toBeInTheDocument();
+  // feedback list
+  const feedbackList = screen.getAllByRole('button', {name:/delete feedback/i});
+  expect(feedbackList).toHaveLength(3);
 });
